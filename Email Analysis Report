@@ -1,0 +1,53 @@
+#📧 Phishing Email Analysis Report: Fake Monday.com Invitation
+
+## 📝 Summary
+This file documents the analysis of a suspicious email impersonating **Monday.com**. The email attempts to lure recipients into clicking a malicious link by pretending to be an invitation to a project board.
+
+---
+
+## 🔍 Email Snapshot
+
+- **Subject:** Monday.com - Invitation to join Board
+- **Sender Email:** support@shared-document.com
+- **Claimed Sender Name:** Monday.com
+- **Time Received:** 4:10 PM
+- **Call to Action:** "See the board now" button
+- **Team Mentioned:** "Everyone at " *(incomplete)*
+
+---
+
+## 🚩 Phishing Indicators
+
+| Indicator | Description |
+|----------|-------------|
+| **❌ Sender Domain Spoofing** | The email is sent from `@shared-document.com`, not a legitimate Monday.com domain (`@monday.com`). |
+| **⚠️ Incomplete Team Name** | The phrase "Everyone at " is cut off, indicating a template failure or automation error—typical in phishing attempts. |
+| **⚠️ Urgency and Pressure** | The line “Everyone else has already joined!” creates a false sense of urgency. |
+| **❓ Unknown Link Destination** | The button “See the board now” does not display the real URL—raising suspicion of redirection to a malicious site. |
+| **❌ No Personalization** | The email doesn't greet the recipient by name or mention any user-specific details. |
+| **⚠️ Brand Imitation** | The email mimics Monday.com branding and logo to build trust—but without authentication. |
+
+---
+
+## 📎 Suspicious Elements (Technical)
+
+- **Sender Email:** support@shared-document.com (unverified domain)
+- **Display Name Spoofing:** Poses as “Monday.com”
+- **Generic Button:** “See the board now” — real link hidden (potential phishing payload)
+- **No DKIM/SPF/DMARC Verification:** (Header analysis required to confirm)
+
+
+## 🛡️ Recommendations
+
+- **Never click** links or buttons in suspicious emails.
+- Use an [email header analyzer](https://mxtoolbox.com/EmailHeaders.aspx) to inspect technical authenticity.
+- Verify with the real sender/company if the invitation is expected.
+- Report the email to your internal security/IT team or email provider.
+
+
+## ✅ Conclusion
+
+This email contains multiple phishing red flags and should be considered **malicious**. Users should avoid interacting with the content and take steps to report and block the sender.
+
+
+
