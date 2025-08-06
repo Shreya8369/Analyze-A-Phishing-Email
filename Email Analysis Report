@@ -1,18 +1,19 @@
-#📧 Phishing Email Analysis Report: Fake Monday.com Invitation
+# 📧 Phishing Email Analysis Report: Fake LinkedIn Notification
 
 ## 📝 Summary
-This file documents the analysis of a suspicious email impersonating **Monday.com**. The email attempts to lure recipients into clicking a malicious link by pretending to be an invitation to a project board.
+This report analyzes a suspicious phishing email impersonating LinkedIn. The email attempts to trick the recipient into clicking a button by mimicking LinkedIn’s notification format and branding.
 
 ---
 
-## 🔍 Email Snapshot
+## 📷 Email Snapshot
 
-- **Subject:** Monday.com - Invitation to join Board
-- **Sender Email:** support@shared-document.com
-- **Claimed Sender Name:** Monday.com
-- **Time Received:** 4:10 PM
-- **Call to Action:** "See the board now" button
-- **Team Mentioned:** "Everyone at " *(incomplete)*
+- **Sender Display Name:** Support
+- **Sender Email Address:** support@careerbuildcompany.com
+- **Subject Line:** To know networkis up or not
+- **Received Time:** 3:10 PM (1 hour ago)
+- **Main Message:** “Demo, see what your network has been up to”
+- **Call to Action:** Bright yellow “See what’s new” button
+- **Summary Stats:** 28 notifications — 1 message, 2 invitations, 24 updates, 1 profile view
 
 ---
 
@@ -20,34 +21,40 @@ This file documents the analysis of a suspicious email impersonating **Monday.co
 
 | Indicator | Description |
 |----------|-------------|
-| **❌ Sender Domain Spoofing** | The email is sent from `@shared-document.com`, not a legitimate Monday.com domain (`@monday.com`). |
-| **⚠️ Incomplete Team Name** | The phrase "Everyone at " is cut off, indicating a template failure or automation error—typical in phishing attempts. |
-| **⚠️ Urgency and Pressure** | The line “Everyone else has already joined!” creates a false sense of urgency. |
-| **❓ Unknown Link Destination** | The button “See the board now” does not display the real URL—raising suspicion of redirection to a malicious site. |
-| **❌ No Personalization** | The email doesn't greet the recipient by name or mention any user-specific details. |
-| **⚠️ Brand Imitation** | The email mimics Monday.com branding and logo to build trust—but without authentication. |
+| **❌ Suspicious Sender Email** | The email comes from `@careerbuildcompany.com`, which is **not** an official LinkedIn domain (e.g., `@linkedin.com`). |
+| **⚠️ Generic Salutation** | The greeting says “Demo,” which could be either a placeholder or an error—indicative of automated phishing tools. |
+| **❓ Link Masking** | The “See what’s new” button does not show the actual URL. This is a common phishing tactic to conceal malicious links. |
+| **⚠️ Brand Imitation** | The layout and branding closely mimic LinkedIn’s notification design, but the domain mismatch breaks authenticity. |
+| **❌ Unusual Domain** | LinkedIn would never use a third-party domain like `careerbuildcompany.com` for notifications. |
+| **⚠️ Psychological Trigger** | The message shows “28 updates” to create curiosity and a false sense of urgency. |
 
 ---
 
-## 📎 Suspicious Elements (Technical)
+## 🔍 Technical Flags
 
-- **Sender Email:** support@shared-document.com (unverified domain)
-- **Display Name Spoofing:** Poses as “Monday.com”
-- **Generic Button:** “See the board now” — real link hidden (potential phishing payload)
-- **No DKIM/SPF/DMARC Verification:** (Header analysis required to confirm)
+- **Display Name Spoofing:** Appears as "Support" to look official
+- **Domain Impersonation:** Tries to look like LinkedIn by copying formatting and structure
+- **Link Obfuscation:** Button likely leads to phishing site (actual link not shown in screenshot)
 
+---
 
 ## 🛡️ Recommendations
 
-- **Never click** links or buttons in suspicious emails.
-- Use an [email header analyzer](https://mxtoolbox.com/EmailHeaders.aspx) to inspect technical authenticity.
-- Verify with the real sender/company if the invitation is expected.
-- Report the email to your internal security/IT team or email provider.
+- Do **not click** any links or buttons from emails with suspicious sender domains.
+- Hover over buttons and links to inspect actual URLs before clicking.
+- Use official apps or log into LinkedIn directly via a browser, rather than through email links.
+- Report suspicious emails to your IT/security team and block the sender domain if verified as malicious.
+- Consider using online tools like [MXToolbox](https://mxtoolbox.com) to analyze email headers.
 
+---
 
 ## ✅ Conclusion
 
-This email contains multiple phishing red flags and should be considered **malicious**. Users should avoid interacting with the content and take steps to report and block the sender.
+This email contains multiple red flags that strongly indicate it is a **phishing attempt**. It should be treated as **malicious** and reported to the appropriate security channels.
+
+---
+
+*This report is part of a phishing awareness project and is intended for educational and cybersecurity training purposes.*
 
 
 
