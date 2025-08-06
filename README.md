@@ -1,5 +1,4 @@
 # Analyze-A-Phishing-Email
-# 📧 Phishing Email Analysis
 
 ## 🔍 Overview
 
